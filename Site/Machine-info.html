@@ -1,0 +1,999 @@
+<html>
+<head>
+<link rel="shortcut icon" href="obm.png" type="image/x-icon"/>
+<title>Obsolensce Machine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-video.css">
+<script type="text/javascript" src="processing-1.4.1.js"></script>
+<script src="jquery-css.js">
+</script>
+<script>
+var processingInstance;
+ 
+    function updatePlotado(){
+        console.log("SLIDER: " + 0);
+        processingInstance = Processing.getInstanceById('sketch');
+        processingInstance.changeBGColor(0);
+    }
+	</script>
+<script type="text/javascript">
+ 
+function calcNum(num) {
+   if (typeof gvisor == 'undefined') {
+      document.calcform.visor.value = '';
+   }
+   if (document.calcform.visor.value.length < 3){
+   document.calcform.visor.value = document.calcform.visor.value + num;
+   gvisor = 1;}
+   
+	
+ }
+
+function verifica() {
+	
+	if(document.calcform.visor.value == 101){
+	var myAudio = document.getElementById("myAudio6");
+		if (myAudio.paused) {
+		myAudio.play();
+		} else {
+		myAudio.pause();
+		}
+	$("#mao1").css("opacity","1");
+	$("#mao1").css("pointerEvents","auto");
+	$("#back").css("pointerEvents","none");
+	return false;
+	}
+	if(document.calcform.visor.value == 102){
+	var myAudio = document.getElementById("myAudio6");
+		if (myAudio.paused) {
+		myAudio.play();
+		} else {
+		myAudio.pause();
+		}
+	$("#mao4").css("opacity","1");
+	$("#mao4").css("pointerEvents","auto");
+	$("#back").css("pointerEvents","none");
+	
+	return false;
+	}
+	if(document.calcform.visor.value == 103){
+	var myAudio = document.getElementById("myAudio6");
+		if (myAudio.paused) {
+		myAudio.play();
+		} else {
+		myAudio.pause();
+		}
+	$("#mao6").css("opacity","1");
+	$("#mao6").css("pointerEvents","auto");
+	$("#back").css("pointerEvents","none");
+	return false;
+	}
+	if(document.calcform.visor.value == 104){
+	var myAudio = document.getElementById("myAudio6");
+		if (myAudio.paused) {
+		myAudio.play();
+		} else {
+		myAudio.pause();
+		}
+	$("#mao5").css("opacity","1");
+	$("#mao5").css("pointerEvents","auto");
+	$("#back").css("pointerEvents","none");
+	
+	return false;
+	}
+	if(document.calcform.visor.value == 106){
+	var myAudio = document.getElementById("myAudio6");
+		if (myAudio.paused) {
+		myAudio.play();
+		} else {
+		myAudio.pause();
+		}
+	$("#mao3").css("opacity","1");
+	$("#mao3").css("pointerEvents","auto");
+	$("#back").css("pointerEvents","none");
+	
+	return false;
+	}
+	if(document.calcform.visor.value == 107){
+	var myAudio = document.getElementById("myAudio6");
+		if (myAudio.paused) {
+		myAudio.play();
+		} else {
+		myAudio.pause();
+		}
+	$("#mao2").css("opacity","1");
+	$("#mao2").css("pointerEvents","auto");
+	$("#back").css("pointerEvents","none");
+	return false;
+	}
+	
+	if(document.calcform.visor.value == 111){
+	var myAudio = document.getElementById("myAudio6");
+		
+	$("#mao7").css("opacity","1");
+	$("#mao7").css("pointerEvents","auto");
+	$("#back").css("pointerEvents","none");
+	return false;
+	}
+	
+}
+
+function verifica2() {
+	
+	
+	$("#mao1").css("opacity","0");
+	$("#mao1").css("pointerEvents","none");
+	$("#mao2").css("opacity","0");
+	$("#mao2").css("pointerEvents","none");
+	$("#mao3").css("opacity","0");
+	$("#mao3").css("pointerEvents","none");
+	$("#mao4").css("opacity","0");
+	$("#mao4").css("pointerEvents","none");
+	$("#mao5").css("opacity","0");
+	$("#mao5").css("pointerEvents","none");
+	$("#mao6").css("opacity","0");
+	$("#mao6").css("pointerEvents","none");
+	$("#mao7").css("opacity","0");
+	$("#mao7").css("pointerEvents","none");
+	$("#back").css("pointerEvents","auto");
+	return true;
+	
+}
+function calcLimpar() {
+   document.calcform.visor.value = '';
+   delete gvalor;
+   delete goper;
+   delete gvisor;
+}
+
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+function aud_play_pause_2() {
+  var myAudio = document.getElementById("myAudio2");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+function aud_play_pause_3() {
+  var myAudio = document.getElementById("myAudio3");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+function aud_play_pause_4() {
+  var myAudio = document.getElementById("myAudio4");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+
+function aud_play_pause_5() {
+  var myAudio = document.getElementById("myAudio5");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+</script>
+
+<audio id="myAudio">
+ <source src="som1.wav"
+         type='audio/mp4'>
+</audio>
+<audio id="myAudio2">
+ <source src="som2.wav"
+         type='audio/mp4'>
+</audio>
+
+<audio id="myAudio3">
+ <source src="som3.mp3"
+         type='audio/mp4'>
+</audio>
+<audio id="myAudio4">
+ <source src="elect.mp3"
+         type='audio/mp4'>
+</audio>
+
+<audio id="myAudio5">
+ <source src="som5.mp3"
+         type='audio/mp4'>
+</audio>
+
+<audio id="myAudio6">
+ <source src="caindo.wav"
+         type='audio/mp4'>
+</audio>
+</head>
+<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="aud_play_pause_5()">
+
+<div id="back" class="overlay">
+<form oniput="" name="calcform" method="post" action="">
+<table id="Table_01" width="1367" height="769" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="21">
+			<img src="images/Machine-info_01.jpg" width="1366" height="51" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="51" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="19">
+			<img src="images/Machine-info_02.jpg" width="1156" height="110" alt=""></td>
+		<td rowspan="2">
+			<img src="images/Machine-info_03.jpg" width="177" height="192" alt=""></td>
+		<td rowspan="18">
+			<img src="images/Machine-info_04.jpg" width="33" height="717" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="110" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="17">9</td>
+		<td rowspan="3">
+			<a href="#abrirModal1"><img src="images/lata_1.jpg" width="138" height="148" alt="" onMouseDown="aud_play_pause_3()"></a></td>
+		<td rowspan="17">
+			<img src="images/Machine-info_07.jpg" width="20" height="607" alt=""></td>
+		<td rowspan="3">
+			<a href="#abrirModal2"><img src="images/lata_2.jpg" width="138" height="148" alt="" onMouseDown="aud_play_pause_3()"></a></td>
+		<td rowspan="17">
+			<img src="images/Machine-info_09.jpg" width="33" height="607" alt=""></td>
+		<td rowspan="3">
+			<a href="#abrirModal3"><img src="images/lata_3.jpg" width="138" height="148" alt="" onMouseDown="aud_play_pause_3()"></a></td>
+		<td rowspan="6">
+			<img src="images/Machine-info_11.jpg" width="30" height="210" alt=""></td>
+		<td rowspan="3">
+			<a href="#abrirModal4"><img src="images/lata_4.jpg" width="138" height="148" alt="" onMouseDown="aud_play_pause_3()"></a></td>
+		<td colspan="11" rowspan="2">
+			<img src="images/Machine-info_13.jpg" width="358" height="91" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="82" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="16">
+			<img src="images/Machine-info_14.jpg" width="177" height="525" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="9" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="15">
+			<img src="images/Machine-info_15.jpg" width="98" height="516" alt=""></td>
+		<td colspan="9" rowspan="2">
+		
+        <output  type="number" id="visor" ></output></td>
+		
+		<td rowspan="15">
+			<img src="images/Machine-info_17.jpg" width="83" height="516" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="57" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="10">
+			<img src="images/Machine-info_18.jpg" width="138" height="269" alt=""></td>
+		<td rowspan="3">
+			<img src="images/Machine-info_19.jpg" width="138" height="62" alt=""></td>
+		<td rowspan="3">
+			<img src="images/Machine-info_20.jpg" width="138" height="62" alt=""></td>
+		<td rowspan="3">
+			<img src="images/Machine-info_21.jpg" width="138" height="62" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="18" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="9">
+			<img src="images/Machine-info_22.jpg" width="177" height="28" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="28" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="9">
+			<img src="images/Machine-info_23.jpg" width="8" height="227" alt=""></td>
+		<td rowspan="2">
+			<input type="button" id="N1" class="num" value=" " onClick="calcNum(1)" onMouseDown="aud_play_pause()" ></td>
+		<td rowspan="9">
+			<img src="images/Machine-info_25.jpg" width="16" height="227" alt=""></td>
+		<td rowspan="2">
+			<input type="button" id="N2" class="num" value=" " onClick="calcNum(2)" onMouseDown="aud_play_pause_2()" ></td>
+		<td rowspan="9">
+			<img src="images/Machine-info_27.jpg" width="17" height="227" alt=""></td>
+		<td rowspan="2">
+			 <input type="button" id="N3" class="num" value=" " onClick="calcNum(3)" onMouseDown="aud_play_pause_2()"></td>
+		<td colspan="2" rowspan="9">
+			<img src="images/Machine-info_29.jpg" width="5" height="227" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="16" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="5">
+			<a href="#abrirModal5" ><img src="images/anim_1.jpg" width="138" height="148" alt="" onMouseDown="aud_play_pause_4()" ></a></td>
+		<td colspan="2" rowspan="5">
+			<img src="images/video.jpg" width="168" height="148" alt=""></td>
+		<td rowspan="5">
+			<img src="images/Machine-info_32.jpg" width="138" height="148" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="29" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/Machine-info_33.jpg" width="44" height="14" alt=""></td>
+		<td>
+			<img src="images/Machine-info_34.jpg" width="44" height="14" alt=""></td>
+		<td>
+			<img src="images/Machine-info_35.jpg" width="43" height="14" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="14" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" id="N4" class="num" value=" " onClick="calcNum(4)" onMouseDown="aud_play_pause()" ></td>
+		<td>
+			 <input type="button" id="N5" class="num" value=" " onClick="calcNum(5)" onMouseDown="aud_play_pause()" ></td>
+		<td>
+		  <input type="button" id="N6" class="num" value=" " onClick="calcNum(6)" onMouseDown="aud_play_pause_2()"></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="46" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/Machine-info_39.jpg" width="44" height="14" alt=""></td>
+		<td>
+			<img src="images/Machine-info_40.jpg" width="44" height="14" alt=""></td>
+		<td>
+			<img src="images/Machine-info_41.jpg" width="43" height="14" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="14" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+		<input type="button" id="N7" class="num" value=" " onClick="calcNum(7)" onMouseDown="aud_play_pause_2()"></td>
+		<td><input type="button" id="N8" class="num" value=" " onClick="calcNum(8)" onMouseDown="aud_play_pause()" ></td>
+		<td><input type="button" id="N9" class="num" value=" " onClick="calcNum(9)" onMouseDown="aud_play_pause_2()"></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="45" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="6">
+			<img src="images/Machine-info_45.jpg" width="138" height="249" alt=""></td>
+		<td colspan="3" rowspan="6">
+			<img src="images/Machine-info_46.jpg" width="306" height="249" alt=""></td>
+		<td>
+			<img src="images/Machine-info_47.jpg" width="44" height="14" alt=""></td>
+		<td>
+			<img src="images/Machine-info_48.jpg" width="44" height="14" alt=""></td>
+		<td>
+			<img src="images/Machine-info_49.jpg" width="43" height="14" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="14" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<input type="button" id="ast" class="num" value=" " onClick="calcLimpar()" onMouseDown="aud_play_pause()" alt=""></td>
+		<td>
+			<input type="button" id="N0" class="num" value=" " onClick="calcNum(0)" onMouseDown="aud_play_pause()" ></td>
+		<td>
+			<img src="images/Machine-info_52.jpg" width="43" height="45" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="45" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<img src="images/Machine-info_53.jpg" width="138" height="148" alt=""></td>
+		<td>
+			<img src="images/Machine-info_54.jpg" width="44" height="4" alt=""></td>
+		<td>
+			<img src="images/Machine-info_55.jpg" width="44" height="4" alt=""></td>
+		<td>
+			<img src="images/Machine-info_56.jpg" width="43" height="4" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="4" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<img src="images/Machine-info_57.jpg" width="3" height="186" alt=""></td>
+		<td colspan="7">
+			<button type="submit" id="validar"  onClick="return verifica()" onMouseDown="aud_play_pause_2()" value=" "alt=""></button></td>
+		<td rowspan="3">
+			<img src="images/Machine-info_59.jpg" width="2" height="186" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="43" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="7" rowspan="2">
+			<img src="images/Machine-info_60.jpg" width="172" height="143" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="101" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/Machine-info_61.jpg" width="138" height="42" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="42" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="163" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="138" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="20" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="138" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="33" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="138" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="30" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="138" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="98" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="3" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="5" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="44" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="16" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="44" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="17" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="43" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="3" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="2" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="83" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="177" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="33" height="1" alt=""></td>
+		<td></td>
+	</tr>
+</table>
+</form>
+
+
+        <div id="abrirModal1" class="modalDialog">
+          <div id="lata">
+            <img src="images/lata_03.png"  alt="" ></div>
+          
+          <div id="texto"><font face="lucida console" >Desde 2007 vem sendo metódico o lançamento anual de novos modelos de Celulares inteligentes
+		  (smartphone) da Apple. Em 2015 já existem 12 modelos de iPhones diferentes dos quais 7 já estão descontinuados. 
+		  Ao preço de conivência com a escravidão de trabalhadores chineses, e degradação do meio ambiente, a Apple vai 
+seguindo hegemônica com os papeis mais valorizados dos últimos tempos na bolça de valores e considerada a empresa mais valiosa do mundo.
+</font></div>
+          <div id="bgtexto"><img src="images/JANELA.jpg"  alt="" width="282"></div>
+          <a class="close"  href="#close" title="Fechar" ><div id="fechar1"></div></a>
+            
+  </div>
+			
+            <div id="abrirModal2" class="modalDialog2">
+          <div id="lata">
+            <img src="images/lata_05.png"  alt="" ></div>
+          
+          <div id="texto"><font face="lucida console" >Um dos pontos atuais sobre a obsolescência programada 
+		  é o relacionado a retrocompa- tibilidade de softwares. Não se compra um produto eletrônico apenas pelo
+		  fato dele ser bonito e ecológico, e sim pelas suas funcionalidades, no caso de celulares 
+		  quanto mais aplicações melhor e nisso o Android (Sistema operacional) mais usado no mundo 
+		  anda pecando, cada versão do sistema é pensado para uma nova linha de 
+		  produtos e a exclusão dos anteriores.</font>
+</div>
+          <div id="bgtexto"><img src="images/JANELA.jpg"  alt="" width="282"></div>
+          <a class="close" title="Fechar" href="#close"><div id="fechar1"></div></a>
+            
+            </div>
+            
+            <div id="abrirModal3" class="modalDialog3">
+          <div id="lata2">
+            <img src="images/lata_07.png"  alt="" ></div>
+          
+          <div id="texto2"><font face="lucida console">Todos os fabricantes são responsáveis pelo ciclo de vida de seus produtos,
+		  entretanto não se vê postos de coleta e afins.
+		“Além do volume crescente, o que complica a destinação correta, a reciclagem desse material, é a complexidade dele.
+		Em cada aparelho, centenas de componentes, milhares de conexões, uma infinidade de materiais”.</font>
+</div>
+          <div id="bgtexto2"><img src="images/JANELA.jpg"  alt="" width="282"></div>
+          <a class="close" title="Fechar" href="#close"><div id="fechar2"></div></a>
+            
+            </div>
+            
+            <div id="abrirModal4" class="modalDialog4">
+          <div id="lata2">
+            <img src="images/lata_09.png"  alt="" ></div>
+          
+          <div id="texto2"><font face="lucida console" ><h2>Está na lei</h2><p>A necessidade de que algo fique obsoleto se justifica quando o assunto é a venda, de eletrônicos, Mas a parte ruim é quando o produto ainda novo quebra e já não se pode fazer a manutenção. 
+De acordo com o Código de Defesa do Consumidor, um produto durável tem o prazo de 90 dias para ser consertado pelo fabricante gratuitamente, quando o defeito é de fabricação,  e no prazo de 5 anos qualquer reparo deve ser feito caso o consumidor precise. Essas garantias em lei não se aplicam a produtos comprados de forma irregular e sem nota fiscal, pelo simples fato de não ser possível comprovar a forma da compra.
+Esses problemas podem ocorrer sempre que se compra fora do país ou produtos pirateados.</p></font>
+</div>
+          <div id="bgtexto2"><img src="images/JANELA.jpg"  alt="" width="282"></div>
+          <a class="close" title="Fechar" href="#close"><div id="fechar2"></div>
+          </a></div>
+          
+</div>
+
+ <div id="abrirModal5" class="modalDialog5">
+          <div id="lampada">
+            <img src="images/lampadaacesa.png"  alt="" ></div>
+          
+          <div id="texto2"><font face="lucida console" >Existe um suposto acordo entre os principais fabricantes para a redução da durabilidade das lâmpadas que ocorreu em meados do século XX 
+		  porém nada ficou comprovado, e hoje circula entre as teorias de conspiração mais comentadas.</font>
+</div>
+          <div id="bgtexto2"><img src="images/JANELA.jpg"  alt="" width="282"></div>
+          <a class="close" title="Fechar" href="#close"><div id="fechar2"></div>
+          </a></div>
+          
+</div>
+
+
+<div id="mao1">
+<table id="Table_02" width="1366" height="769" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="390" height="138" colspan="3" type="submit" onClick="return verifica2()" >
+			</td>
+		<td width="711" height="138" >
+			<img src="images/mao_02.png" width="711" height="138" alt=""></td>
+		<td width="265" height="138" colspan="3" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="219" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+		<td colspan="5">
+			<img src="images/mao_06.png" width="968" height="519" alt=""></td>
+		<td width="179" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="115" height="111" type="submit" onClick="return verifica2()">
+			</td>
+		<td width="793" height="111" colspan="3">
+			<img src="images/mao_08.png" width="793" height="111" alt=""></td>
+		<td width="60" height="111"type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="219" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="115" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="711" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="26" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="60" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="179" height="1" alt=""></td>
+	</tr>
+</table>
+  <div id="texto_MAO"><div id="interface" style="width: 50px; height:50px; top:70px; left:200px; position: absolute;">
+ <input type="button" class="colorslider" id="chip" value=" " step="1" onClick="updatePlotado()"/>
+ </div>
+  <script type="text/processing">
+
+int posicaoFinal=300;
+int posicaoInicial=0;
+int posicao=posicaoInicial;
+int contador=0;
+boolean fimInterpolacao=true;
+int ValorPlotadoNovo=31;
+int alturaTela=500;
+int comprimentoTela=308;
+int[] valor={0,0,30,53,0,38,64,0,40,67,0,40,68,0,41,70,0,52,83,0,74,100,0,76,100,0,83,110,0,95,123};
+
+
+void setup(){
+size(500,308);
+background (0,0);
+}
+
+void draw(){
+fill (255,0,2);
+  noStroke();
+   if (ValorPlotadoNovo==3){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==6){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==9){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==12){
+   fill (28,256,21);
+  noStroke();
+ }
+    if (ValorPlotadoNovo==15){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==18){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==21){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==24){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==27){
+   fill (28,256,21);
+  noStroke();
+ }
+ if (ValorPlotadoNovo==30){
+   fill (28,256,21);
+  noStroke();
+ }
+   if(ValorPlotadoNovo<31){
+ interpolacao(ValorPlotadoNovo*16,valor[ValorPlotadoNovo],5);
+   }
+}
+
+void interpolacao(int x,int valor, int velocidade ){
+  contador++;
+ if(posicao<valor){
+   posicao=contador*(velocidade/2);
+   
+   rect(x,(-1*posicao)+250,10,10);
+ }else{
+   posicao=0;
+   contador=0;
+ ValorPlotadoNovo++;
+ }
+ 
+}
+void changeBGColor(int tValue){
+   ValorPlotadoNovo = tValue;
+}
+ 
+</script>
+    <canvas id="sketch" ></canvas>
+	 
+</div></div>
+
+
+<div id="mao2">
+<table id="Table_06" width="1366" height="768" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td rowspan="3" onClick="return verifica2()">
+			<img src="images/video_01.png" width="130" height="768" alt=""></td>
+		<td colspan="2" onClick="return verifica2()">
+			<img src="images/video_02.png" width="1128" height="65" alt=""></td>
+		<td rowspan="3" onClick="return verifica2()"> 
+			<img src="images/video_03.png" width="108" height="768" alt=""></td>
+	</tr>
+	<tr>
+		<td onClick="return verifica2()">
+			<img src="images/video_04.png" width="5" height="616" alt=""></td>
+		<td>
+			<img src="images/video_05.png" width="1123" height="616" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" onClick="return verifica2()">
+			<img src="images/video_06.png" width="1128" height="87" alt=""></td>
+	</tr>
+</table>
+  <div id="texto_MAO4">
+    <video width="477" height="291" controls>
+  <source src="capetalismo.mp4" type="video/mp4">
+  <source src="capetalismo.ogg" type="video/ogg">
+</video>
+</div></div>
+
+<div id="mao3">
+<table id="Table_01" width="1367" height="768" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2" rowspan="3" onClick="return verifica2()">
+			<img src="images/lampadas_01.png" width="232" height="344" alt=""></td>
+		<td colspan="3" onClick="return verifica2()">
+			<img src="images/lampadas_02.png" width="985" height="30" alt=""></td>
+		<td rowspan="8" onClick="return verifica2()">
+			<img src="images/lampadas_03.png" width="149" height="768" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="30" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<img src="images/lampadas_04.png" width="985" height="208" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="208" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="5">
+			<img src="images/lampadas_05.png" width="420" height="518" alt=""></td>
+		<td rowspan="4">
+			<img src="images/lampadas_06.png" width="469" height="454" alt=""></td>
+		<td rowspan="5">
+			<img src="images/lampadas_07.png" width="96" height="518" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="106" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="5" onClick="return verifica2()">
+			<img src="images/lampadas_08.png" width="157" height="424" alt=""></td>
+		<td onClick="return verifica2()">
+			<img src="images/lampadas_09.png" width="75" height="49" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="49" alt=""></td>
+	</tr>
+	<tr>
+		<td >
+			<img src="images/lampadas_10.png" width="75" height="222" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="222" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3" onClick="return verifica2()">
+			<img src="images/lampadas_11.png" width="75" height="153" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="77" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/lampadas_12.png" width="469" height="64" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="64" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" onClick="return verifica2()">
+			<img src="images/lampadas_13.png" width="985" height="12" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="1" height="12" alt=""></td>
+	</tr>
+</table>
+  <div id="texto_MAO2">
+  <font face="lucida console" ><p>Uma lâmpada fluorescente dura cerca de 10 mil horas. São mais de 416 dias de 
+			uso direto, pouco mais de um ano. Bastante tempo, certo? Imagine, no entanto, 
+			se existisse uma lâmpada que durasse 100 anos. Quer dizer, não imagine, não. 
+			Essa lâmpada existe (veja vídeo abaixo). Pelo menos é o que diz Benito Muros, 
+			espanhol que diz estar sendo ameaçado de morte por causa de sua criação.</p>
+			<p>Muros é o presidente de um movimento chamando Sem Obsolescência Programada (SOP) e diz que, 
+			não só lâmpadas, mas muitos outros objetos de nosso dia a dia poderiam durar muito mais. 
+			Na verdade, existe uma teoria – a da Obsolescência Programada – de que muitos fabricantes 
+			desenvolvem produtos de curta durabilidade para obrigar os consumidores a adquirir novos 
+			produtos de forma acelerada e sem uma necessidade real. Segundo o espanhol, fazem parte dessa 
+			lista de itens como baterias de celular, computadores, geladeiras e televisões. “Não há nada 
+			para se fazer além de comprar outra”, disse ele em entrevista ao jornal espanhol El Economista.</p>
+			<p>Segundo ele, algumas peças essenciais para eletrodomésticos, por exemplo, são colocadas
+			propositalmente próximas das partes que mais aquecem no objeto, diminuindo seu tempo de vida.
+			Soma-se a isso, o uso de materiais de menor qualidade.</p></font>
+			<p><iframe width="440"  src="https://www.youtube.com/embed/L2UmdlUMXas" frameborder="0" allowfullscreen></iframe></p>
+</video>
+</div></div>
+  
+  <div id="mao4">
+<table id="Table_02" width="1366" height="769" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="390" height="138" colspan="3" type="submit" onClick="return verifica2()" >
+			</td>
+		<td width="711" height="138" >
+			<img src="images/mao_02.png" width="711" height="138" alt=""></td>
+		<td width="265" height="138" colspan="3" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="219" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+		<td colspan="5">
+			<img src="images/mao_07.png" width="968" height="519" alt=""></td>
+		<td width="179" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="115" height="111" type="submit" onClick="return verifica2()">
+			</td>
+		<td width="793" height="111" colspan="3">
+			<img src="images/mao_08.png" width="793" height="111" alt=""></td>
+		<td width="60" height="111"type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="219" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="115" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="711" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="26" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="60" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="179" height="1" alt=""></td>
+	</tr>
+</table>
+  <div id="texto_MAO3"><font face="lucida console" color="#FFFFFF"><p style="text-align:center;">De tantos produtos que lançam essas duas principais empresas sempre tentam
+  no maximo manter a novidade em seus produtos, atualizando sempre seus softwares, só que isso nem sempre é bom, por causa das versões
+  do aparelho que as vezes são incapazes de suportar tais atualizações, acabam ficando obsoletos. Aqui vai a lista dessas duas concorrentes
+  de seus lançamentos de softwares ate hoje. Pereceba que nem todos funcionam ate hoje</p>
+  <p style="text-align:center;">iPhone (2007 — 2008)   Android 1.5 (2009)</p>
+<p style="text-align:center;"> iPhone 3G (2008 — 2010)   Android 1.6 Donut (2009)</p>
+<p style="text-align:center;">iPhone 3Gs (2009 — 2012)   Android 2.0/2.1 Eclair (2010)</p>
+<p style="text-align:center;">iPhone 4 (2010 — 2014)   Android 2.2 Froyo (2010)</p>
+<p style="text-align:center;">iPhone 4s (2011 — 2014)   Android 2.3 Gingerbread (2010)</p>
+<p style="text-align:center;">iPhone 5 (2012 — 2013)   Android 3.0-3.2 Honeycomb (2011)</p>
+<p style="text-align:center;">iPhone 5c (2013 — 2015)   Android 4.0 Ice Cream Sandwich (2011)</p>
+<p style="text-align:center;">iPhone 5s (2013 —hoje)   Android 4.1-4.3 Jelly Bean (2012)</p>
+<p style="text-align:center;">iPhone 6 (2014 — hoje)   Android 4.4 KitKat (2014)</p>
+<p style="text-align:center;">iPhone 6 Plus (2014 — hoje)   Android 5.0/5.1 Lollipop (2014) </p>
+<p style="text-align:center;">iPhone 6s (2015 — hoje)   Android 6.0 Marshmallow (2015)</p>
+<p style="text-align:center;">iPhone 6s Plus (2015 — hoje)</p></font>   </div></div>
+
+ <div id="mao5">
+
+<table id="Table_02" width="1366" height="769" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="390" height="138" colspan="3" type="submit" onClick="return verifica2()" >
+			</td>
+		<td width="711" height="138" >
+			<img src="images/mao_02.png" width="711" height="138" alt=""></td>
+		<td width="265" height="138" colspan="3" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="219" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+		<td colspan="5">
+			<img src="images/mao_45.png" width="968" height="519" alt=""></td>
+		<td width="179" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="115" height="111" type="submit" onClick="return verifica2()">
+			</td>
+		<td width="793" height="111" colspan="3">
+			<img src="images/mao_08.png" width="793" height="111" alt=""></td>
+		<td width="60" height="111"type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="219" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="115" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="711" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="26" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="60" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="179" height="1" alt=""></td>
+	</tr>
+</table>
+</div>
+
+<div id="mao6">
+<table id="Table_02" width="1366" height="769" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="390" height="138" colspan="3" type="submit" onClick="return verifica2()" >
+			</td>
+		<td width="711" height="138" >
+			<img src="images/mao_02.png" width="711" height="138" alt=""></td>
+		<td width="265" height="138" colspan="3" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="219" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+		<td colspan="5">
+			<img src="images/mao_64.png" width="968" height="519" alt=""></td>
+		<td width="179" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="115" height="111" type="submit" onClick="return verifica2()">
+			</td>
+		<td width="793" height="111" colspan="3">
+			<img src="images/mao_08.png" width="793" height="111" alt=""></td>
+		<td width="60" height="111"type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="219" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="115" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="711" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="26" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="60" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="179" height="1" alt=""></td>
+	</tr>
+</table>
+  <div id="texto_MAO64"><font face="lucida console" color="#FFFFFF"><p >Grande parte dos elementos do
+  lixo eletrônico poderiam ser reutilizados, mas a falta de conhecimento
+  sobre o descarte apropriado exacerba este problema. Chamando de “mineração urbana”, 
+  Steiner explicou que a quantidade de minerais que se encontram em celulares, computadores
+  e outros aparelhos eletrônicos ultrapassam muitas vezes a quantidade existente em jazidas
+  subterrâneas.</p><p>Dados da ONU sobre o lixo eletrônico:
+
+Em 2017 o volume de lixo eletrônico pode chegar em  50 milhões de toneladas.
+
+Nas Américas o Brasil é o segundo maior produtor de lixo eletrônico.
+
+Um latino-americano produz em média entre um e 14 quilos de lixo por dia. Se fosse separado na fonte , aproximadamente 90% poderia ser reconvertido em combustível ou reciclado.
+
+Anualmente um milhão de pessoas morrem por intoxicação química decorrente do descarte irregular de lixo.
+
+Esse é um panorama da situação atual. No entanto a fiscalização negligencia essa demanda.</p></font>   </div></div>
+
+<div id="mao7">
+		<table id="Table_02" width="1366" height="769" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="390" height="138" colspan="3" type="submit" onClick="return verifica2()" >
+			</td>
+		<td width="711" height="138" onClick="return verifica2()">
+			</td>
+		<td width="265" height="138" colspan="3" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="219" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+		<td colspan="5">
+			<img src="deleting.gif" width="968" height="519" alt=""></td>
+		<td width="179" height="630" rowspan="2" type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td width="115" height="111" type="submit" onClick="return verifica2()">
+			</td>
+		<td width="793" height="111" colspan="3" onClick="return verifica2()">
+			</td>
+		<td width="60" height="111"type="submit" onClick="return verifica2()">
+			</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/spacer.gif" width="219" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="115" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="56" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="711" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="26" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="60" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="179" height="1" alt=""></td>
+	</tr>
+</table>
+		</div>
+</body>
+</html>

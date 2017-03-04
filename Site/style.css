@@ -1,0 +1,373 @@
+@charset "utf-8";
+#back{
+	background-image:url(fundo.jpg);
+	width:1366px;
+	
+}
+
+
+#validar{
+	background-image: url(images/enter.jpg);
+	width:172;
+	height:43;
+	
+}
+#visor{
+	font-size: 65px;
+	text-align:center;
+	font:Homenaje;
+	width: 177px;
+	height: 75px;
+	position:relative;
+	left: 40px;
+}
+#N1{
+	background-image:url(images/1_normal.jpg);
+	width: 44px;
+	height: 45px;
+	
+}
+#N1:hover{
+	background-image:url(images/1_down.jpg);
+	
+	width:44px;
+	height:45px;
+	
+}
+#N2{
+	background-image:url(images/2_normal.jpg);
+	width: 44px;
+	height: 45px;
+	
+}
+#N2:hover{
+	background-image:url(images/2_down.jpg);
+	
+	width:44px;
+	height:45px;
+}
+#N3{
+	background-image:url(images/3_normal.jpg);
+	width: 43px;
+	height: 45px;
+	
+}
+#N3:hover{
+	background-image:url(images/3_down.jpg);
+	
+	width:43px;
+	height:45px;
+}
+#N4{
+	background-image:url(images/4_normal.jpg);
+	width: 44px;
+	height: 46px;
+	
+}
+#N4:hover{
+	background-image:url(images/4_down.jpg);
+	
+	width:44px;
+	height:46px;
+}
+#N5{
+	background-image:url(images/5_normal.jpg);
+	width: 44px;
+	height: 46px;
+	
+}
+#N5:hover{
+	background-image:url(images/5_down.jpg);
+	
+	width:44px;
+	height:46px;
+}
+#N6{
+	background-image:url(images/6_normal.jpg);
+	width: 43px;
+	height: 46px;
+	
+}
+#N6:hover{
+	background-image:url(images/6_down.jpg);
+	
+	width:43px;
+	height:46px;
+}
+#N7{
+	background-image:url(images/7_normal.jpg);
+	width: 44px;
+	height: 45px;
+	
+}
+#N7:hover{
+	background-image:url(images/7_down.jpg);
+	
+	width:44px;
+	height:45px;
+}
+#N8{
+	background-image:url(images/8_normal.jpg);
+	width: 44px;
+	height: 45px;
+	
+}
+#N8:hover{
+	background-image:url(images/8_down.jpg);
+	
+	width:44px;
+	height:45px;
+}
+#N9{
+	background-image:url(images/9_normal.jpg);
+	width: 43px;
+	height: 45px;
+	
+}
+#N9:hover{
+	background-image:url(images/9_down.jpg);
+	
+	width:43px;
+	height:45px;
+}
+#N0{
+	background-image:url(images/0_normal.jpg);
+	width: 44px;
+	height: 45px;
+	
+}
+#N0:hover{
+	background-image:url(images/0_down.jpg);
+	
+	width:44px;
+	height:45px;
+}
+#ast{
+	background-image:url(images/ast_normal.jpg);
+	width: 44px;
+	height: 45px;
+	
+}
+#ast:hover{
+	background-image:url(images/ast_down.jpg);
+	
+	width:44px;
+	height:45px;
+}
+#hast{
+	background-image:url(images/hast_normal.jpg);
+	width: 43px;
+	height: 45px;
+	
+}
+#hast:hover{
+	background-image:url(images/hast_down.jpg);
+	
+	width:43px;
+	height:45px;
+}
+
+#mao1{
+	position: absolute;
+	font-family: Lucida® Console;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 50;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+	
+}
+#mao2{
+	position: absolute;
+	font-family: Lucida® Console;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 5000;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+	
+}
+#texto_MAO{
+	position: absolute;
+	top: 228px;
+	right: 0;
+	bottom: 0;
+	left: 549px;
+	overflow: auto;
+	width: 500px;
+	height: 308px;
+	font-family: Lucida® Console;
+	
+}
+#texto_MAO2{
+	position: absolute;
+	top: 238px;
+	right: 0;
+	bottom: 0;
+	left: 630px;
+	overflow: auto;
+	width: 500px;
+	height: 440px;
+	font-family: Lucida® Console;
+	
+}
+
+#mao3{
+	position: absolute;
+	font-family:Lucida® Console;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 5000;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+	overflow: suto;
+	
+}
+#mao4{
+	position: absolute;
+	font-family:Lucida® Console;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 5000;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+	overflow: suto;
+	
+}
+
+#texto_MAO3{
+	position: absolute;
+	top: 370px;
+	right: 0;
+	bottom: 0;
+	left: 565px;
+	overflow: auto;
+	width: 500px;
+	height: 165px;
+	font-family: Lucida® Console;
+	
+}
+#texto_MAO4{
+	position: absolute;
+	top: 240px;
+	right: 0;
+	bottom: 0;
+	left: 457px;
+	overflow: auto;
+	width: 500px;
+	height: 308px;
+	font-family: Lucida® Console;
+	
+}
+
+#mao5{
+	position: absolute;
+	font-family:Lucida® Console;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 5000;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+	overflow: suto;
+	
+}
+
+#chip{
+	background-image:url(chip.png);
+	width: 60px;
+	height: 60px;
+	
+}
+
+#mao6{
+	position: absolute;
+	font-family:Lucida® Console;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 5000;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+	overflow: suto;
+	
+}
+#texto_MAO64{
+	position: absolute;
+	top: 240px;
+	right: 0;
+	bottom: 0;
+	left: 550px;
+	overflow: auto;
+	width: 250px;
+	height: 298px;
+	font-family: Lucida® Console;
+
+	
+}
+
+#mao7{
+	position: absolute;
+	font-family:Lucida® Console;
+	top: 0px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	z-index: 5000;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+	overflow: suto;
+	
+}

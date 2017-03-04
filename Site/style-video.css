@@ -1,0 +1,278 @@
+.modalDialog {
+	position: absolute;
+	font-family: Lucida® Console;
+	top: 128px;
+	right: 0;
+	bottom: 0;
+	left: 140px;
+	
+	z-index: 50;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+
+/*overflow:scroll;  activa scroll da página se a modal for muito comprida */
+}
+
+#fechar1{
+	position: absolute;
+	top: 314px;
+	width: 29px;
+	height: 21px;
+	left: 376px;
+	z-index: 9999999;
+}
+#bgtexto{
+	position: absolute;
+	width: 240px;
+	height: 307px;
+	left: 103px;
+	z-index: 100;
+	top: -19px;
+}
+#texto{
+	position: absolute;
+	font-family: Lucida® Console;
+	width: 192px;
+	height: 293px;
+	left: 137px;
+	top: -3px;
+	z-index: 200;
+	overflow: auto;
+}
+#lata{
+	position: absolute;
+	width: 120px;
+	height: 180px;
+	left: 3px;
+	top: -4px;
+	z-index:400;
+	
+}
+
+
+ .modalDialog:target {
+opacity:2;
+pointer-events: auto;
+}
+ 
+.modalDialog > div {
+width: auto;
+position: relative;
+margin: 5% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+
+
+ 
+}
+ 
+ .close {
+background: #606061;
+color: #FFFFFF;
+text-decoration: none;
+font-weight: bold;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+ 
+.close:hover { background: #00d9ff; }
+
+.modalDialog2 {
+	position: absolute;
+	font-family: Lucida® Console;
+	top: 128px;
+	right: 0;
+	bottom: 0;
+	left: 300px;
+	
+	z-index: 50;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+
+/*overflow:scroll;  activa scroll da página se a modal for muito comprida */
+}
+ .modalDialog2:target {
+opacity:2;
+pointer-events: auto;
+}
+ 
+.modalDialog2 > div {
+width: auto;
+position: relative;
+margin: 5% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+
+
+ 
+}
+.modalDialog3 {
+	position: absolute;
+	font-family: Lucida® Console;
+	top: 128px;
+	right: 0;
+	bottom: 0;
+	left: 260px;
+	
+	z-index: 50;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+
+/*overflow:scroll;  activa scroll da página se a modal for muito comprida */
+}
+ .modalDialog3:target {
+opacity:2;
+pointer-events: auto;
+}
+ 
+.modalDialog3 > div {
+width: auto;
+position: relative;
+margin: 5% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+
+
+ 
+}
+
+.modalDialog4 {
+	position: absolute;
+	font-family: Lucida® Console;
+	top: 128px;
+	right: 0;
+	bottom: 0;
+	left: 418px;
+	
+	z-index: 50;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+
+/*overflow:scroll;  activa scroll da página se a modal for muito comprida */
+}
+ .modalDialog4:target {
+opacity:2;
+pointer-events: auto;
+}
+ 
+.modalDialog4 > div {
+width: auto;
+position: relative;
+margin: 5% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+
+
+ 
+}
+#bgtexto2{
+	position: absolute;
+	font-family: Lucida® Console;
+	width: 240px;
+	height: 307px;
+	left: -13px;
+	z-index: 100;
+	top: -19px;
+}
+#texto2{
+	position: absolute;
+	font-family: Lucida® Console;
+	width: 192px;
+	height: 293px;
+	left: 15px;
+	top: -3px;
+	z-index: 200;
+	overflow: auto;
+}
+#lata2{
+	position: absolute;
+	width: 120px;
+	height: 180px;
+	left: 225px;
+	top: -4px;
+	z-index: 400;
+	
+}
+#fechar2{
+	position: absolute;
+	top: 318px;
+	width: 29px;
+	height: 21px;
+	left: 259px;
+	z-index: 9999999;
+}
+
+
+
+.modalDialog5 {
+	position: absolute;
+	font-family: Lucida® Console;
+	top: 350px;
+	right: 0;
+	bottom: 0;
+	left: 75px;
+	
+	z-index: 50;
+	width: 440px;
+	height: 379px;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: block;
+
+/*overflow:scroll;  activa scroll da página se a modal for muito comprida */
+}
+ .modalDialog5:target {
+opacity:2;
+pointer-events: auto;
+}
+ 
+.modalDialog5 > div {
+width: auto;
+position: relative;
+margin: 5% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+
+
+ 
+}
+#lampada{
+	position: absolute;
+	width: 120px;
+	height: 180px;
+	left: 190px;
+	top: -40px;
+	z-index: 400;
+	
+}
